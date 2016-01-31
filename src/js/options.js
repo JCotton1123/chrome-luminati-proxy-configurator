@@ -29,7 +29,7 @@
                     localStorage['luminati.pass'] = '';
                 }
                 if(!localStorage['luminati.whitelist']) {
-                    localStorage['luminati.whitelist'] = '';
+                    localStorage['luminati.whitelist'] = '*';
                 }
             },
             initFormState: function() {
