@@ -1,0 +1,37 @@
+<html>
+<head>
+    <link rel="stylesheet" type="text/css" href="../css/bootstrap.min.css" />
+    <link rel="stylesheet" type="text/css" href="../css/style.css" />
+    <script src="../js/pac.js"></script>
+    <script src="../js/options.js"></script>
+</head>
+<body id="control-panel" class="container">
+    <h4>Luminati Proxy Configurator</h4>
+    <form>
+        <input class="btn btn-default" type="button" id="proxy_state" value="Enable Proxy" />
+        <input class="btn btn-default" type="button" id="new_session" value="New Session" />
+    </form>
+    <hr />
+    <form>
+        <div class="form-group">
+            <label for="host">Proxy</label>
+            <input type="text" id="host" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="username">Username</label>
+            <input type="text" id="username" class="form-control" placeholder="ex: lum-customer-<name>-zone-gen" />
+        </div>
+        <div class="form-group">
+            <label for="username">Password</label>
+            <input type="text" id="password" class="form-control" />
+        </div>
+        <div class="form-group">
+            <label for="whitelist">Proxy Whitelist</label>
+            <textarea id="whitelist" class="form-control"></textarea>
+            <p class="help-block">Only use the proxy for the domains specified here - one per line.</p>
+        </div>
+        <input class="btn btn-default" type="button" id="set_configuration" value="Set Configuration" />
+    </form>
+    <span id="debug"></span>
+</body>
+</html>

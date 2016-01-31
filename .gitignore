@@ -1,0 +1,5 @@
+# Mac nonsense
+.DS_Store
+
+# Keys
+*.pem

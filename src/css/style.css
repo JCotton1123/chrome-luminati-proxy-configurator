@@ -1,0 +1,18 @@
+#control-panel {
+	width: 400px;
+    background-image: url('../img/background.png');
+}
+
+#control-panel > h1,
+#control-panel > h2,
+#control-panel > h3,
+#control-panel > h4,
+#control-panel > h5,
+#control-panel label {
+    color: white;
+}
+
+#control-panel .help-block {
+    font-size: 12px;
+    color: lightGrey;
+}
