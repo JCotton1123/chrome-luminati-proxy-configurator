@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
 	"name": "Luminati Proxy Configurator",
-	"version": "0.1.0",
+	"version": "1.0.0",
 	"description": "An extension customized for working with the Luminati service. It includes the ability to quickly initiate a session switch.",
 	"homepage_url": "https://github.com/JCotton1123/chrome-luminati-proxy-configurator",
 	"icons": {

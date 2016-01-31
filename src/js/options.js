@@ -94,10 +94,16 @@
                 });
 
                 elements.set_configuration.addEventListener('click', function(){
-                    localStorage['luminati.host'] = elements.host.value; 
-                    localStorage['luminati.user'] = elements.username.value;
-                    localStorage['luminati.pass'] = elements.password.value;
-                    localStorage['luminati.whitelist'] = elements.whitelist.value;
+                    localStorage['luminati.host'] = elements.host.value.trim();
+                    localStorage['luminati.user'] = elements.username.value.trim();
+                    localStorage['luminati.pass'] = elements.password.value.trim();
+                    localStorage['luminati.whitelist'] = (function() {
+                        var whitelistStr = elements.whitelist.value.trim();
+                        var whitelistArr = whitelistStr.split("\n");
+                        return whitelistArr.map(function(item) {
+                            return item.trim();
+                        }).join("\n");
+                    }());
                 });
             }
         };
